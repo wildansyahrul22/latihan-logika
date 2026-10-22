@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 8: Kembalian Kasir | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 8: Kembalian Kasir</h1>
+    <p class="deskripsi">Hitung kembalian beserta rincian pecahan uangnya, dengan jumlah lembar dan keping sesedikit mungkin. Ketik angka tanpa titik, misalnya 37500.</p>
+
+    <div class="kartu">
+      <form id="form-kasir" novalidate>
+        <div class="isian">
+          <label for="total">Total belanja (Rp)</label>
+          <input type="number" id="total" step="100" min="100" placeholder="contoh: 37500">
+        </div>
+        <div class="isian">
+          <label for="bayar">Uang dibayar (Rp)</label>
+          <input type="number" id="bayar" step="100" min="100" placeholder="contoh: 100000">
+        </div>
+        <button type="submit">Hitung Kembalian</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" class="hasil" aria-live="polite" hidden>
+        <p id="kembalian" class="kembalian"></p>
+        <ul id="rincian" class="rincian"></ul>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../07-analisis-teks/index.html">Sebelumnya: Analisis Teks dan Palindrom</a>
+      <a class="berikutnya" href="../09-tebak-angka/index.html">Berikutnya: Tebak Angka</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* Gaya khusus Tugas 5 */
+
+#n {
+  width: 8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kotak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.kotak.kopi {
+  background: #78350f;
+  border-color: #78350f;
+  color: #fff;
+}
+
+.kotak.susu {
+  background: #fffbeb;
+  border-color: #fcd34d;
+}
+
+.kotak.kopi-susu {
+  background: #d6a76c;
+  border-color: #b45309;
+  font-weight: 600;
+}
+
+.ringkasan {
+  margin: 12px 0 0;
+  color: #4b5563;
+}

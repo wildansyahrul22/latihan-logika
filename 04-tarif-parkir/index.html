@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 4: Tarif Parkir | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 4: Tarif Parkir</h1>
+    <p class="deskripsi">Motor Rp 2.000 untuk jam pertama dan Rp 1.000 per jam berikutnya, maksimal Rp 10.000. Mobil Rp 5.000 dan Rp 3.000 per jam berikutnya, maksimal Rp 25.000. Parkir sampai 15 menit gratis.</p>
+
+    <div class="kartu">
+      <form id="form-parkir" novalidate>
+        <fieldset class="isian">
+          <legend>Kendaraan</legend>
+          <div class="pilihan">
+            <label><input type="radio" name="kendaraan" value="motor" checked> Motor</label>
+            <label><input type="radio" name="kendaraan" value="mobil"> Mobil</label>
+          </div>
+        </fieldset>
+        <div class="isian">
+          <label for="menit">Lama parkir (menit)</label>
+          <input type="number" id="menit" step="1" min="1" placeholder="contoh: 61">
+        </div>
+        <button type="submit">Hitung Tarif</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" class="hasil" aria-live="polite" hidden>
+        <dl class="daftar-hasil">
+          <dt>Lama parkir</dt>
+          <dd id="lama"></dd>
+          <dt>Tarif</dt>
+          <dd id="tarif"></dd>
+        </dl>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../03-jumlah-hari/index.html">Sebelumnya: Jumlah Hari dalam Sebulan</a>
+      <a class="berikutnya" href="../05-kopi-susu/index.html">Berikutnya: Kopi Susu</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

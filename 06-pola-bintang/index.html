@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 6: Pola Bintang | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 6: Pola Bintang</h1>
+    <p class="deskripsi">Gambar segitiga siku-siku, piramida, atau belah ketupat dari bintang setinggi N baris.</p>
+
+    <div class="kartu">
+      <form id="form-pola" novalidate>
+        <div class="isian">
+          <label for="bentuk">Bentuk</label>
+          <select id="bentuk">
+            <option value="siku">Segitiga siku-siku</option>
+            <option value="piramida">Piramida</option>
+            <option value="ketupat">Belah ketupat</option>
+          </select>
+        </div>
+        <div class="isian">
+          <label for="tinggi">Tinggi (1–20)</label>
+          <input type="number" id="tinggi" step="1" min="1" max="20" placeholder="contoh: 4">
+        </div>
+        <button type="submit">Gambar</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <pre id="hasil" class="hasil pola" aria-live="polite" hidden></pre>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../05-kopi-susu/index.html">Sebelumnya: Kopi Susu</a>
+      <a class="berikutnya" href="../07-analisis-teks/index.html">Berikutnya: Analisis Teks dan Palindrom</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

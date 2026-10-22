@@ -1,0 +1,9 @@
+/* Gaya khusus Tugas 10 */
+
+.isian-lebar {
+  flex: 1 1 280px;
+}
+
+.isian-lebar input {
+  width: 100%;
+}

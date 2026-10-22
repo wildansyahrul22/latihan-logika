@@ -1,0 +1,16 @@
+/* Gaya khusus Tugas 3 */
+
+#tahun {
+  width: 9rem;
+}
+
+.kalimat-utama {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.kalimat-kedua {
+  margin: 4px 0 0;
+  color: #4b5563;
+}

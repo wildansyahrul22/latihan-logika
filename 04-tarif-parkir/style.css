@@ -1,0 +1,28 @@
+/* Gaya khusus Tugas 4 */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.pilihan {
+  display: flex;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.pilihan label {
+  font-weight: 400;
+}
+
+#menit {
+  width: 10rem;
+}

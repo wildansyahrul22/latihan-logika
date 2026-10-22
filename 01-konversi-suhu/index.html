@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 1: Konversi Suhu | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 1: Konversi Suhu</h1>
+    <p class="deskripsi">Ubah suhu Celsius ke Fahrenheit, Reamur, dan Kelvin.</p>
+
+    <div class="kartu">
+      <form id="form-suhu" novalidate>
+        <div class="isian">
+          <label for="celsius">Suhu (°C)</label>
+          <input type="number" id="celsius" step="any" placeholder="contoh: 36.6">
+        </div>
+        <button type="submit">Konversi</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" class="hasil" aria-live="polite" hidden>
+        <dl class="daftar-hasil">
+          <dt>Fahrenheit</dt>
+          <dd id="fahrenheit"></dd>
+          <dt>Reamur</dt>
+          <dd id="reamur"></dd>
+          <dt>Kelvin</dt>
+          <dd id="kelvin"></dd>
+        </dl>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a class="berikutnya" href="../02-nilai-rapor/index.html">Berikutnya: Nilai Rapor</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

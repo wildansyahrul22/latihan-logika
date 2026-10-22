@@ -1,0 +1,35 @@
+/* Gaya khusus Tugas 2 */
+
+#nilai {
+  width: 10rem;
+}
+
+.kotak-nilai {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid transparent;
+}
+
+.huruf {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.keterangan {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.kotak-nilai.lulus {
+  background: #f0fdf4;
+  border-color: #16a34a;
+  color: #15803d;
+}
+
+.kotak-nilai.gagal {
+  background: #fef2f2;
+  border-color: #dc2626;
+  color: #b91c1c;
+}

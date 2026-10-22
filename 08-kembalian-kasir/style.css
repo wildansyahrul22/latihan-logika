@@ -1,0 +1,23 @@
+/* Gaya khusus Tugas 8 */
+
+#total,
+#bayar {
+  width: 11rem;
+}
+
+.kembalian {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.rincian {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Saat uang pas, daftar rincian kosong dan tidak perlu memberi jarak */
+.rincian:empty {
+  display: none;
+}

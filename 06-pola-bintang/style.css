@@ -1,0 +1,14 @@
+/* Gaya khusus Tugas 6 */
+
+#tinggi {
+  width: 8rem;
+}
+
+/* <pre> menjaga spasi; huruf monospace membuat semua karakter sama lebar */
+.pola {
+  margin-bottom: 0;
+  overflow-x: auto;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}

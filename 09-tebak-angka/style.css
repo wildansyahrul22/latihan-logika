@@ -1,0 +1,26 @@
+/* Gaya khusus Tugas 9 */
+
+#tebakan {
+  width: 8rem;
+}
+
+.respons {
+  min-height: 1.5em;
+  margin: 16px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.respons.peringatan,
+.respons.kalah {
+  color: #b91c1c;
+}
+
+.respons.menang {
+  color: #15803d;
+}
+
+.riwayat {
+  margin: 0;
+  padding-left: 24px;
+}

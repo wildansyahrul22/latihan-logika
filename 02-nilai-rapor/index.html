@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 2: Nilai Rapor | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 2: Nilai Rapor</h1>
+    <p class="deskripsi">Ubah nilai angka 0–100 menjadi nilai huruf. A mulai 85, B mulai 70, C mulai 60, D mulai 50, selain itu E. Lulus jika nilainya minimal 60.</p>
+
+    <div class="kartu">
+      <form id="form-nilai" novalidate>
+        <div class="isian">
+          <label for="nilai">Nilai</label>
+          <input type="number" id="nilai" step="any" placeholder="0–100">
+        </div>
+        <button type="submit">Cek</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" class="hasil kotak-nilai" aria-live="polite" hidden>
+        <span id="huruf" class="huruf"></span>
+        <span id="keterangan" class="keterangan"></span>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../01-konversi-suhu/index.html">Sebelumnya: Konversi Suhu</a>
+      <a class="berikutnya" href="../03-jumlah-hari/index.html">Berikutnya: Jumlah Hari dalam Sebulan</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

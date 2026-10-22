@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 7: Analisis Teks dan Palindrom | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 7: Analisis Teks dan Palindrom</h1>
+    <p class="deskripsi">Hitung karakter, kata, vokal, dan konsonan, lalu cek apakah teks itu palindrom, yaitu sama jika dibaca dari depan maupun dari belakang.</p>
+
+    <div class="kartu">
+      <form id="form-teks" novalidate>
+        <div class="isian isian-penuh">
+          <label for="teks">Teks</label>
+          <textarea id="teks" rows="4" placeholder="contoh: Kasur ini rusak"></textarea>
+        </div>
+        <button type="submit">Analisis</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" class="hasil" aria-live="polite" hidden>
+        <dl class="daftar-hasil">
+          <dt>Karakter</dt>
+          <dd id="jumlah-karakter"></dd>
+          <dt>Kata</dt>
+          <dd id="jumlah-kata"></dd>
+          <dt>Vokal</dt>
+          <dd id="jumlah-vokal"></dd>
+          <dt>Konsonan</dt>
+          <dd id="jumlah-konsonan"></dd>
+          <dt>Palindrom</dt>
+          <dd id="status-palindrom"></dd>
+        </dl>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../06-pola-bintang/index.html">Sebelumnya: Pola Bintang</a>
+      <a class="berikutnya" href="../08-kembalian-kasir/index.html">Berikutnya: Kembalian Kasir</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

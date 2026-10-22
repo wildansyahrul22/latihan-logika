@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 5: Kopi Susu | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 5: Kopi Susu</h1>
+    <p class="deskripsi">FizzBuzz versi warung: kelipatan 3 menjadi Kopi, kelipatan 5 menjadi Susu, dan kelipatan keduanya menjadi Kopi Susu.</p>
+
+    <div class="kartu">
+      <form id="form-kopi" novalidate>
+        <div class="isian">
+          <label for="n">N (1–100)</label>
+          <input type="number" id="n" step="1" min="1" max="100" placeholder="contoh: 15">
+        </div>
+        <button type="submit">Tampilkan</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" aria-live="polite" hidden>
+        <ol id="grid" class="grid"></ol>
+        <p id="ringkasan" class="ringkasan"></p>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../04-tarif-parkir/index.html">Sebelumnya: Tarif Parkir</a>
+      <a class="berikutnya" href="../06-pola-bintang/index.html">Berikutnya: Pola Bintang</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* Gaya khusus Tugas 7 */
+
+.isian-penuh {
+  flex-basis: 100%;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}

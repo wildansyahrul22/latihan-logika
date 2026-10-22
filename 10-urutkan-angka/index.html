@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 10: Urutkan Angka | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 10: Urutkan Angka</h1>
+    <p class="deskripsi">Urutkan deretan angka dengan bubble sort, lalu lihat nilai terkecil, terbesar, jumlah, rata-rata, dan median.</p>
+
+    <div class="kartu">
+      <form id="form-urut" novalidate>
+        <div class="isian isian-lebar">
+          <label for="deretan">Deretan angka (pisahkan dengan koma)</label>
+          <input type="text" id="deretan" placeholder="contoh: 5, 3, 8, 1, 9, 2">
+        </div>
+        <button type="submit">Urutkan</button>
+      </form>
+
+      <p id="pesan" class="pesan" role="alert" hidden></p>
+
+      <div id="hasil" class="hasil" aria-live="polite" hidden>
+        <dl class="daftar-hasil">
+          <dt>Terurut</dt>
+          <dd id="terurut"></dd>
+          <dt>Terkecil</dt>
+          <dd id="terkecil"></dd>
+          <dt>Terbesar</dt>
+          <dd id="terbesar"></dd>
+          <dt>Jumlah</dt>
+          <dd id="jumlah"></dd>
+          <dt>Rata-rata</dt>
+          <dd id="rata-rata"></dd>
+          <dt>Median</dt>
+          <dd id="median"></dd>
+        </dl>
+      </div>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../09-tebak-angka/index.html">Sebelumnya: Tebak Angka</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

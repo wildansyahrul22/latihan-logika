@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 9: Tebak Angka | Latihan Logika</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="kembali"><a href="../index.html">Kembali ke daftar tugas</a></p>
+
+    <h1>Tugas 9: Tebak Angka</h1>
+    <p class="deskripsi">Komputer memilih angka rahasia 1–100. Tebak angkanya dalam 7 kesempatan.</p>
+
+    <div class="kartu">
+      <form id="form-tebak" novalidate>
+        <div class="isian">
+          <label for="tebakan">Tebakanmu</label>
+          <input type="number" id="tebakan" step="1" min="1" max="100" placeholder="1–100">
+        </div>
+        <button type="submit" id="tombol-tebak">Tebak</button>
+        <button type="button" id="tombol-main-lagi" hidden>Main Lagi</button>
+      </form>
+
+      <p id="respons" class="respons" role="status"></p>
+
+      <p>Sisa kesempatan: <strong id="sisa"></strong></p>
+
+      <h2>Riwayat tebakan</h2>
+      <ol id="riwayat" class="riwayat"></ol>
+    </div>
+
+    <nav class="navigasi">
+      <a href="../08-kembalian-kasir/index.html">Sebelumnya: Kembalian Kasir</a>
+      <a class="berikutnya" href="../10-urutkan-angka/index.html">Berikutnya: Urutkan Angka</a>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
